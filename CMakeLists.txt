@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD 11)
 # project specofication
 project(ximula VERSION ${XIMULA_VERSION}
 							 DESCRIPTION "Software implementation of 8-bit CPU"
-							 LANGUAGES CXX)
+							 LANGUAGES CXX) 
 
 # override default location for instalation file
 set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR})
@@ -21,7 +21,7 @@ set(XIMULA_ISNTALL_BIN_DIR ${PROJECT_SOURCE_DIR}/bin)
 set(XIMULA_INSTALL_LIB_DIR ${PROJECT_SOURCE_DIR}/lib)
 
 # add subdirectories
-# add_subdirectory(src)
+add_subdirectory(src)
 add_subdirectory(tests)
 
 # include child libs headers file
@@ -29,5 +29,3 @@ add_subdirectory(tests)
 
 # install 
 install(TARGETS ximula_tests DESTINATION bin)
-
-

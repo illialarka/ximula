@@ -13,7 +13,7 @@ make && make install
 cd ..
 
 echo "Run tests..."
-bin/raccoon_tests
+bin/ximula_tests
 
 echo "Run ximula..."
-bin/raccoon_cpu
+bin/ximula
